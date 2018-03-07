@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Designs By Laura Rains</title>
+    
+    <link rel = "stylesheet" href = "css/reset.css" type="text/css">
+    <link rel = "stylesheet" href = "css/grid.css" type="text/css">
+    <link rel = "stylesheet" href = "css/generic.css" type="text/css">
+    <link rel = "stylesheet" href = "css/style.css" type="text/css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.0/less.min.js" ></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+ </head>
+
+    <body>
+        
+   <header>
+   
+<div id="sitelogo"></div>
+    
+  
+<!-- Slideshow container -->
+<div id="slideshow">
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+<div class="mySlides fade">
+<img src="images/client.png" alt="marathon">
+    
+  </div>
+
+<div class="mySlides fade">
+<img src="images/php.png" alt="php">
+   
+  </div>
+
+<div class="mySlides fade">
+<img src="images/ui.png" alt="ui" >
+   
+  </div>
+    
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+    </div>
+       </div>
+<h1>Laura Rains</h1>
+</header>
+
+   
+    <main>
+        
+                        <h2>My Skills </h2>
+        
+    <p> I am a website designer and developer, with experience in SEO and google analytics.<br></p> 
+    <p>I have been told my color palettes are eye catching and my mobile first design
+    is cutting edge.</p>
+    <p>I can design your site using the latest versions of HTML 5, CSS3, PHP,
+    JavaScript and as of June 2018 I will be able to incorporate CRM Drupal
+    if needed.</p>
+        
+                        <h2>Contact</h2>
+        
+        <form action="script/contact_process.php" method="post">
+      
+        <input type="text"  placeholder="Name" name="name" class="contact" required>
+<br>
+
+        <input type="email" required="" placeholder="Your email address" name="email" class="contact">
+<br>
+   
+        <textarea required="" placeholder="Comments or Questions " name="comments" class="contact"></textarea>
+<br>
+   
+        <input type="submit" value="Submit">
+
+</form>
+   
+        
+        
+   </main>
+   
+
+   
+   <footer> 
+       
+
+<a href="#" class="fa fa-linkdn"></a>
+
+     
+   </footer>
+        
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+   
+   
+   </body>
+   </html>
