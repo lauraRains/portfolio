@@ -12,11 +12,24 @@
   }
   header h1 {
     color: #1c5978;
+    padding: .50em;
     background-color: #ffffff;
-    font-size: 1.6em;
+    font-size: 2em;
     font-weight: bold;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
+  }
+  #sitelogo {
+    background: url(../images/logo.jpg) no-repeat;
+    background-position: center;
+    height: 100px;
+    width: 120px;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  * {
+    box-sizing: border-box;
   }
   main {
     padding: 1em;
@@ -28,7 +41,6 @@
     font-weight: bold;
     font-size: 1.4em;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
   }
   main h3 {
     color: #1c5978;
@@ -37,7 +49,6 @@
     padding: .50em;
     padding-bottom: .50em;
     text-align: center;
-    font-family: 'Raleway', sans-serif;
   }
   main li {
     font-family: 'Raleway', sans-serif;
@@ -58,17 +69,6 @@
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
-  }
-  #sitelogo {
-    background: url(../images/logo.jpg) no-repeat;
-    background-position: center;
-    padding-bottom: 2em;
-    height: 110px;
-    width: 130px;
-    font-weight: bold;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
   }
   /* Slideshow container */
   #slideshow-container {
@@ -189,17 +189,11 @@
     text-align: center;
     font-family: 'Raleway', sans-serif;
   }
-  /* Style all font awesome icons */
-  .fa {
-    padding: 10px;
-    font-size: 20px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-  }
-  /* Add a hover effect if you want */
-  .fa:hover {
-    opacity: 0.7;
+  footer a {
+    text-align: right;
+    font-size: 1em;
+    color: #1C5978;
+    font-family: 'Raleway', sans-serif;
   }
 }
 /* Tablet stylesheet styling for landscape and portrait */
@@ -225,6 +219,14 @@
     line-height: 1.3em;
     text-align: center;
   }
+  main a {
+    font-size: 1.5em;
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+  }
+  * {
+    box-sizing: border-box;
+  }
   footer {
     background-color: #ffffff;
     color: #000000;
@@ -248,8 +250,9 @@
     text-align: center;
     font-family: 'Raleway', sans-serif;
   }
-  .fa {
-    padding: 15px;
-    font-size: 25px;
+  footer a {
+    font-size: 1.5em;
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
   }
 }
